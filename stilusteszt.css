@@ -1,0 +1,86 @@
+/* Általános alapbeállítások */
+body {
+    font-family: 'Arial', sans-serif; /* Alap font beállítás */
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 4%, rgba(9,121,108,1) 35%, rgba(0,255,179,1) 79%);
+    color: #fff; /* Fehér szöveg, hogy jól látható legyen */
+    line-height: 1.6;
+}
+
+/* Header stílus */
+header h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+/* Bootstrap button kiegészítés */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005f39; /* Sötétebb zöld a hover effektushoz */
+    transform: scale(1.05); /* Enyhe méretnövelés a hover effektushoz */
+}
+
+/* Jumbotron kiegészítés */
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Átlátszó fehér háttér */
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Alert box kiegészítés */
+.alert-warning {
+    background-color: rgba(255, 165, 0, 0.7); /* Narancs színű figyelmeztető doboz */
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #e67e00; /* Erősebb narancs színű szegély */
+}
+
+/* Accordion stílusok */
+.accordion-button {
+    background-color: #00796b; /* Zöld háttér a gomboknak */
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #004d40; /* Sötétebb zöld, amikor a panel nyitva van */
+}
+
+.accordion-body {
+    background-color: rgba(255, 255, 255, 0.9); /* Fehér háttér a válasz szövegeknek */
+    color: #333;
+}
+
+/* Card kártyák */
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Finom árnyék a kártyák körül */
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Mobilbarát tippek */
+@media (max-width: 767px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    .display-5 {
+        font-size: 2.5rem;
+    }
+}
